@@ -1,0 +1,48 @@
+{
+    "name": "vdf",
+    "displayName": "Valve KeyValue Files Support",
+    "description": "Support valve kv language(.vmt .qc .vdf .res .kv etc.)",
+    "version": "0.0.1",
+    "publisher": "GEEKiDoS",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "vdf",
+                "aliases": [
+                    "Valve KeyValues File",
+                    "vdf"
+                ],
+                "extensions": [
+                    ".vmt",
+                    ".qc",
+                    ".vdf",
+                    ".kv",
+                    ".res",
+                    ".vmf",
+                    ".vmx",
+                    ".txt"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "vdf",
+                "scopeName": "source.vdf",
+                "path": "./syntaxes/vdf.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "vdf",
+                "path": "./snippets/vdf.snippets.json"
+            }
+        ]
+    }
+}

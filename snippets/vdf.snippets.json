@@ -1,0 +1,373 @@
+{
+    "BaseTexture": {
+        "prefix": "basetexture",
+        "body": "\"$$basetexture\" \"${1:Texture}\"",
+        "description": "VMT:$basetexture <texture>"
+    },
+    "basetexturetransform": {
+        "prefix": "basetexturetransform",
+        "body": "\"$$basetexturetransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
+        "description": "VMT:$basetexturetransform <matrix>"
+    },
+    "basetextureoffset": {
+        "prefix": "basetextureoffset",
+        "body": "\"$$basetextureoffset\" \"${1:0}\"",
+        "description": "VMT:$basetextureoffset <normal>"
+    },
+    "basetexturescale": {
+        "prefix": "basetexturescale",
+        "body": "\"$$basetexturescale\" \"${1:0}\"",
+        "description": "VMT:$basetexturescale <normal>"
+    },
+    "frame": {
+        "prefix": "frame",
+        "body": "\"$$frame\" \"${1:1}\"",
+        "description": "VMT:$frame <int>"
+    },
+    "model": {
+        "prefix": "model",
+        "body": "\"$$model\" \"1\"",
+        "description": "VMT:$model 1"
+    },
+    "color": {
+        "prefix": "color",
+        "body": "\"$$color\" \"[ ${1:1} ${2:1} ${3:1} ]\"",
+        "description": "VMT:$color \"[ R G B ]\""
+    },
+    "blendTintByBaseAlpha": {
+        "prefix": "blendTintByBaseAlpha",
+        "body": "\"$$blendTintByBaseAlpha\" \"1\"",
+        "description": "VMT:$blendTintByBaseAlpha <boolean>"
+    },
+    "blendTintColorOverBase": {
+        "prefix": "blendTintColorOverBase",
+        "body": "\"$$blendTintColorOverBase\" \"${1:1.0}\"",
+        "description": "VMT:$blendTintColorOverBase <float>"
+    },
+    "seamless_scale": {
+        "prefix": "seamless_scale",
+        "body": "\"$$seamless_scale\" \"${1:1.0}\"",
+        "description": "VMT:$seamless_scale <float>"
+    },
+    "seamless_detail": {
+        "prefix": "seamless_detail",
+        "body": "\"$$seamless_detail\" \"1\"",
+        "description": "VMT:$seamless_detail <boolean>"
+    },
+    "alpha": {
+        "prefix": "alpha",
+        "body": "\"$$seamless_scale\" \"${1:1.0}\"",
+        "description": "VMT:$alpha <normal>"
+    },
+    "alphatest": {
+        "prefix": "alphatest",
+        "body": "\"$$alphatest\" \"1\"",
+        "description": "VMT:$alphatest <boolean>"
+    },
+    "allowalphatocoverage": {
+        "prefix": "allowalphatocoverage",
+        "body": "\"$$allowalphatocoverage\" \"1\"",
+        "description": "VMT:$allowalphatocoverage <boolean>"
+    },
+    "alphatestreference": {
+        "prefix": "alphatestreference",
+        "body": "\"$$alphatestreference\" \"${1:1.0}\"",
+        "description": "VMT:$alphatestreference <float>"
+    },
+    "blendmodulatetexture": {
+        "prefix": "blendmodulatetexture",
+        "body": "\"$$blendmodulatetexture\" \"${1:Texture}\"",
+        "description": "VMT:$blendmodulatetexture <texture>"
+    },
+    "blendmasktransform":{
+        "prefix":"blendmasktransform",
+        "body":"\"$$blendmasktransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
+        "description": "VMT:$blendmasktransform <matrix>"
+    },
+    "distancealpha": {
+        "prefix": "distancealpha",
+        "body": "\"$$distancealpha\" \"1\"",
+        "description": "VMT:$distancealpha <boolean>"
+    },
+    "softedges": {
+        "prefix": "softedges",
+        "body": "\"$$softedges\" \"1\"",
+        "description": "VMT:$softedges <boolean>"
+    },
+    "scaleedgesoftnessbasedonscreenres": {
+        "prefix": "scaleedgesoftnessbasedonscreenres",
+        "body": "\"$$scaleedgesoftnessbasedonscreenres\" \"1\"",
+        "description": "VMT:$scaleedgesoftnessbasedonscreenress <boolean>"
+    },
+    "glow": {
+        "prefix": "glow",
+        "body": "\"$$glow\" \"1\"",
+        "description": "VMT:$glow <boolean>"
+    },
+    "glowcolor": {
+        "prefix": "glowcolor",
+        "body": "\"$$glowcolor\" \"[ ${1:1} ${2:1} ${3:1} ]\"",
+        "description": "VMT:$glowcolor \"[ R G B ]\""
+    },
+    "glowalpha": {
+        "prefix": "glowalpha",
+        "body": "\"$$glowalpha\" \"${1:0}\"",
+        "description": "VMT:$glowalpha <normal>"
+    },
+    "glowx": {
+        "prefix": "glowx",
+        "body": "\"$$glowx\" \"${1:0}\"",
+        "description": "VMT:$glowx <normal>"
+    },
+    "glowy": {
+        "prefix": "glowy",
+        "body": "\"$$glowy\" \"${1:0}\"",
+        "description": "VMT:$glowy <normal>"
+    },
+    "glowstart": {
+        "prefix": "glowstart",
+        "body": "\"$$glowstart\" \"${1:0}\"",
+        "description": "VMT:$glowstart <normal>"
+    },
+    "glowend": {
+        "prefix": "glowend",
+        "body": "\"$$glowend\" \"${1:0}\"",
+        "description": "VMT:$glowend <normal>"
+    },
+    "outline": {
+        "prefix": "outline",
+        "body": "\"$$outline\" \"1\"",
+        "description": "VMT:$outline <boolean>"
+    },
+    "outlinecolor": {
+        "prefix": "outlinecolor",
+        "body": "\"$$outlinecolor\" \"[ ${1:1} ${2:1} ${3:1} ]\"",
+        "description": "VMT:$outlinecolor \"[ R G B ]\""
+    },
+    "outlinealpha": {
+        "prefix": "outlinealpha",
+        "body": "\"$$outlinealpha\" \"${1:0}\"",
+        "description": "VMT:$outlinealpha <normal>"
+    },
+    "outlinestart0": {
+        "prefix": "outlinestart0",
+        "body": "\"$$outlinestart0\" \"${1:0}\"",
+        "description": "VMT:$outlinestart0 <normal>"
+    },
+    "outlinestart1": {
+        "prefix": "outlinestart1",
+        "body": "\"$$outlinestart1\" \"${1:0}\"",
+        "description": "VMT:$outlinestart1 <normal>"
+    },
+    "outlineend0": {
+        "prefix": "outlineend0",
+        "body": "\"$$outlineend0\" \"${1:0}\"",
+        "description": "VMT:$outlineend0 <normal>"
+    },
+    "outlineend1": {
+        "prefix": "outlineend1",
+        "body": "\"$$outlineend1\" \"${1:0}\"",
+        "description": "VMT:$outlineend1 <normal>"
+    },
+    "scaleoutlinesoftnessbasedonscreenres": {
+        "prefix": "scaleoutlinesoftnessbasedonscreenres",
+        "body": "\"$$scaleoutlinesoftnessbasedonscreenres\" \"1\"",
+        "description": "VMT:$scaleoutlinesoftnessbasedonscreenres <boolean>"
+    },
+    "nocull": {
+        "prefix": "nocull",
+        "body": "\"$$nocull\" \"1\"",
+        "description": "VMT:$nocull <boolean>"
+    },
+    "translucent": {
+        "prefix": "translucent",
+        "body": "\"$$translucent\" \"1\"",
+        "description": "VMT:$translucent <boolean>"
+    },
+    "additive": {
+        "prefix": "additive",
+        "body": "\"$$additive\" \"1\"",
+        "description": "VMT:$additive <boolean>"
+    },
+    "BumpMap": {
+        "prefix": "bumpmap",
+        "body": "\"$$bumpmap\" \"${1:Texture}\"",
+        "description": "VMT:$bumpmap <texture>"
+    },
+    "bumptransform":{
+        "prefix":"bumptransform",
+        "body":"\"$$bumptransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
+        "description": "VMT:$bumptransform <matrix>"
+    },
+    "ssbump": {
+        "prefix": "ssbump",
+        "body": "\"$$ssbump\" \"1\"",
+        "description": "VMT:$ssbump <boolean>"
+    },
+    "bumpscale": {
+        "prefix":"bumpscale",
+        "body": "\"$$bumpscale\" \"${1:1.0}\"",
+        "description": "VMT:$bumpscale <float>"
+    },
+    "bumpframe": {
+        "prefix":"bumpframe",
+        "body": "\"$$bumpframe\" \"${1:1}\"",
+        "description": "VMT:$bumpframe <int>"
+    },
+    "nodiffusebumplighting": {
+        "prefix": "nodiffusebumplighting",
+        "body": "\"$$nodiffusebumplighting\" \"1\"",
+        "description": "VMT:$nodiffusebumplighting <boolean>"
+    },
+    "forcebump": {
+        "prefix": "forcebump",
+        "body": "\"$$forcebump\" \"1\"",
+        "description": "VMT:$forcebump <boolean>"
+    },
+    "bumpoffset": {
+        "prefix": "bumpoffset",
+        "body": "\"$$bumpoffset\" \"${1:?}\"",
+        "description": "VMT:$bumpoffset <unknown>"
+    },
+    "SSBumpMathFix": {
+        "prefix":"SSBumpMathFix",
+        "body": "\"$$SSBumpMathFix\" \"${1:1}\"",
+        "description": "VMT:$SSBumpMathFix <int>"
+    },
+    "parallaxmap": {
+        "prefix": "parallaxmap",
+        "body": "\"$$parallaxmap\" \"${1:Texture}\"",
+        "description": "VMT:$parallaxmap <texture> ❗Unsupported"
+    },
+    "parallaxmapscale": {
+        "prefix": "parallaxmapscale",
+        "body": "\"$$parallaxmapscale\" \"${1:1.0}\"",
+        "description": "VMT:$parallaxmapscale <float> ❗Unsupported"
+    },
+    "selfillum": {
+        "prefix": "selfillum",
+        "body": "\"$$selfillum\" \"1\"",
+        "description": "VMT:$selfillum <boolean>"
+    },
+    "selfillumtint": {
+        "prefix": "selfillumtint",
+        "body": "\"$$selfillumtint\" \"[ ${1:1} ${2:1} ${3:1} ]\"",
+        "description": "VMT:$selfillumtint \"[ R G B ]\""
+    },
+    "selfillummaskscale": {
+        "prefix":"selfillummaskscale",
+        "body": "\"$$selfillummaskscale\" \"${1:1.0}\"",
+        "description": "VMT:$bumpscale <normal>"
+    },
+    "selfillummask": {
+        "prefix": "selfillummask",
+        "body": "\"$$selfillummask\" \"${1:Texture}\"",
+        "description": "VMT:$selfillummask <texture>"
+    },
+    "selfillum_envmapmask_alpha": {
+        "prefix": "selfillum_envmapmask_alpha",
+        "body": "\"$$selfillum_envmapmask_alpha\" \"1\"",
+        "description": "VMT:$selfillum_envmapmask_alpha <boolean>"
+    },
+    "selfIllumFresnel": {
+        "prefix": "selfIllumFresnel",
+        "body": "\"$$selfIllumFresnel\" \"1\"",
+        "description": "VMT:$selfIllumFresnel <boolean>"
+    },
+    "selfIllumFresnelMinMaxExp": {
+        "prefix": "selfIllumFresnelMinMaxExp",
+        "body": "\"$$selfIllumFresnelMinMaxExp\" \"[ ${1:0.0} ${2:1.0} ${3:1.0} ]\"",
+        "description": "VMT:$selfIllumFresnelMinMaxExp \"[ normal normal normal ]\""
+    },
+    "lightwarptexture": {
+        "prefix": "lightwarptexture",
+        "body": "\"$$lightwarptexture\" \"${1:Texture}\"",
+        "description": "VMT:$lightwarptexture <texture>"
+    },
+    "halflambert": {
+        "prefix": "halflambert",
+        "body": "\"$$halflambert\" \"1\"",
+        "description": "VMT:$halflambert <boolean>"
+    },
+    "AmbientOcclusion": {
+        "prefix":"AmbientOcclusion",
+        "body": "\"$$AmbientOcclusion\" \"${1:1.0}\"",
+        "description": "VMT:$AmbientOcclusion <float>"
+    },
+    "AmbientOcclColor": {
+        "prefix": "AmbientOcclColor",
+        "body": "\"$$AmbientOcclColor\" \"[ ${1:1} ${2:1} ${3:1} ]\"",
+        "description": "VMT:$AmbientOcclColor \"[ R G B ]\""
+    },
+    "AmbientOcclTexture": {
+        "prefix": "AmbientOcclTexture",
+        "body": "\"$$AmbientOcclTexture\" \"${1:Texture}\"",
+        "description": "VMT:$AmbientOcclTexture <texture>"
+    },
+    "rimlight": {
+        "prefix": "rimlight",
+        "body": "\"$$rimlight\" \"1\"",
+        "description": "VMT:$rimlight <boolean>\nRequires $phong to be set to 1. \n❕Phong shading is only available with VertexLitGeneric.\n(for CSGO,its available on LightmappedGeneric)\n"
+    },
+    "rimexponent": {
+        "prefix": "rimexponent",
+        "body": "\"$$rimexponent\" \"${1:1}\"",
+        "description": "VMT:$rimexponent <int>"
+    },
+    "rimboost": {
+        "prefix": "rimboost",
+        "body": "\"$$rimboost\" \"${1:1}\"",
+        "description": "VMT:$rimboost <int>"
+    },
+    "rimmask": {
+        "prefix": "rimmask",
+        "body": "\"$$rimmask\" \"1\"",
+        "description": "VMT:$rimmask <boolean>"
+    },
+    "EnvMap": {
+        "prefix": "envmap",
+        "body":"\"$$envmap\" \"${1:env_cubemap}\"",
+        "description": "VMT:Enviroment Map Key and default value"
+    },
+    "surfaceprop":{
+        "prefix":"surfaceprop",
+        "body":"\"$surfaceprop\" \"${1:none}\"",
+        "description": "VMT & QC:$surfaceprop <name>"
+    },
+    "detail":{
+        "prefix":"detail",
+        "body":"\"$$detail\" \"${1:Texture}\"",
+        "description": "VMT:$detail <texture>"
+    },
+    "detailtexturetransform":{
+        "prefix":"detailtexturetransform",
+        "body":"\"$$detailtexturetransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
+        "description": "VMT:$detailtexturetransform <matrix>"
+    },
+    "detailscale":{
+        "prefix":"detailscale",
+        "body":"\"$$detailscale\" \"${1:1}\"",
+        "description": "VMT:$detailscale <float>"
+    },
+    "detailblendfactor":{
+        "prefix":"detailblendfactor",
+        "body":"\"$$detailblendfactor\" \"${1:1}\"",
+        "description": "VMT:$detailblendfactor <normal>"
+    },
+    "dollar": {
+        "prefix": "d",
+        "body":"\"$${1:Key}\" \"${2:Value}\"",
+        "description": "VDF:Create a kvp that key started with $"
+    },
+    "WorldVertexTransition": {
+        "prefix": ">worldvertextransition",
+        "body": [ 
+            "\"WorldVertexTransition\"",
+            "{",
+            "\t\"$$basetexture\" \"${1:Texture 1}\"",
+            "\t\"$$basetexture2\" \"${2:Texture 2}\"",
+            "}"
+        ],
+        "description": "VMT Temple:WorldVertexTransition Shader"
+    }
+}

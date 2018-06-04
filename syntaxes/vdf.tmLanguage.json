@@ -1,0 +1,32 @@
+{
+    "scopeName":"source.vdf",
+    "patterns": [
+        {
+            "comment": "single line comment",
+            "match": "//.*",
+            "name": "comment.line.txt"
+        },
+        {
+            "comment": "Ability Special Variable",
+            "match": "%[^\\s]*",
+            "name": "variable.parameter"
+        },
+        {
+            "comment": "A group of other sections or KV pairs",
+            "match": "^\\s*(?!\".*?\"\\s*\".*?\")\".*?\"",
+            "name": "support.class"
+        },{
+            "comment":"A key value pair",
+            "match":"(\".*?\")\\s*(\".*?\")",
+            "name":"entity.name.tag.txt",
+            "captures": {
+                "1": {
+                    "name":"entity.name.tag.txt"
+                },
+                "2": {
+                    "name":"string.quoted.txt"
+                }
+            }
+        }
+    ]
+}
