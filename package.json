@@ -4,6 +4,7 @@
     "description": "Support valve kv language(.vmt .qc .vdf .res .kv etc.)",
     "version": "0.0.1",
     "publisher": "GEEKiDoS",
+    "repository":"https://github.com/GEEKiDoS/vdf-vscode.git",
     "engines": {
         "vscode": "^1.23.0"
     },
