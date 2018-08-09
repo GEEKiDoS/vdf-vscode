@@ -1,8 +1,8 @@
 {
     "name": "vdf",
     "displayName": "Valve KeyValue Files Support",
-    "description": "Support valve kv language(.vmt .qc .vdf .res .kv etc.)",
-    "version": "0.0.1",
+    "description": "Support valve kv language(.vmt .qc .vdf .res .kv .fgd etc.)",
+    "version": "0.0.2",
     "publisher": "GEEKiDoS",
     "icon": "SourceLogo.gif",
     "repository":"https://github.com/GEEKiDoS/vdf-vscode.git",
@@ -31,6 +31,17 @@
                     ".txt"
                 ],
                 "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "fgd",
+                "aliases": [
+                    "Forge Game Data",
+                    "fgd"
+                ],
+                "extensions": [
+                    ".fgd"
+                ],
+                "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
@@ -38,6 +49,11 @@
                 "language": "vdf",
                 "scopeName": "source.vdf",
                 "path": "./syntaxes/vdf.tmLanguage.json"
+            },
+            {
+                "language": "fgd",
+                "scopeName": "source.fgd",
+                "path": "./syntaxes/fgd.tmLanguage.json"
             }
         ],
         "snippets": [

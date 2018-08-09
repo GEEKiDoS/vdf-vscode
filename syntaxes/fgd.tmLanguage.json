@@ -1,0 +1,74 @@
+{
+    "scopeName": "source.fgd",
+    "patterns" : [
+        {
+            "name": "comment.line.double-slash.fgd",
+            "match": "^\\s*//.*",
+            "comment": "Single Line Comment"
+        },
+        {
+            "name": "keyword.control.import.include.fgd",
+            "match": "\\@include",
+            "comment": "FGD Include"
+        },
+        {
+            "name": "string.quoted.double.fgd",
+            "begin": "\"",
+            "end": "\""
+        },
+        {
+            "name": "keyword.fgd",
+            "match": "\\b(axis|angle|color255|color1|filterclass|material|node_dest|npcclass|origin|pointentityclass|scene|sidelist|sound|sprite|studio|target_destination|target_name_or_class|target_source|vecline|vector|integer|float|choices|[F|f]lags|string)\\b",
+            "comment": "FGD Keyword"
+        },
+        {
+            "match": "^\\s*(input|output) ([A-Z][^(]*)(\\()([^)]*)(\\)) (:)",
+            "comment": "Input/Output Function",
+            "captures": {
+                "1" : {
+                    "name": "storage.type.function.fgd"
+                },
+                "2": {
+                    "name": "entity.name.function.fgd"
+                },
+                "3": {
+                    "name": "punctuation.section.function.begin.fgd"
+                },
+                "4": {
+                    "name": "variable.parameter.fgd"
+                },
+                "5": {
+                    "name": "punctuation.section.function.end.fgd"
+                }
+            }
+        },
+        {
+            "name": "entity.name.class.fgd",
+            "match": "\\@(BaseClass|PointClass|NPCClass|SolidClass|KeyFrameClass|MoveClass|FilterClass)",
+            "comment": "Entity Class Type"
+        },
+        {
+            "match": "\\b(base|color|iconsprite|sphere|studio|studioprop|line|frustum|size)\\(([^)]*)\\)",
+            "captures": {
+                "1": {
+                    "name": "entity.name.function.fgd"
+                },
+                "2": {
+                    "name": "variable.parameter.fgd"
+                }
+            }
+        },
+        {
+            "match": "(=) (\\w+)\\s*(\\:?)",
+            "comment": "Entity Name Assignment",
+            "captures": {
+                "1": {
+                    "name": "storage.fgd"
+                },
+                "2": {
+                    "name": "storage.type.function.fgd"
+                }
+            }
+        }
+    ]
+}
