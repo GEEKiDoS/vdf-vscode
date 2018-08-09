@@ -12,6 +12,7 @@ Supports:
 .vmf
 .vmx
 .vdf
+.fgd
 ```
 
 ## Features
@@ -19,6 +20,10 @@ Supports:
 VMT keyvalues autocomplete.
 
 ## Release Notes
+
+### 0.0.2
+
+Added FGD support (thanks @Gocnak)
 
 ### 0.0.1
 
