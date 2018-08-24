@@ -1,5 +1,5 @@
 {
-    "scopeName":"source.vdf",
+    "scopeName": "source.vdf",
     "patterns": [
         {
             "comment": "single line comment",
@@ -15,16 +15,73 @@
             "comment": "A group of other sections or KV pairs",
             "match": "^\\s*(?!\".*?\"\\s*\".*?\")\".*?\"",
             "name": "support.class"
-        },{
-            "comment":"A key value pair",
-            "match":"(\".*?\")\\s*(\".*?\")",
-            "name":"entity.name.tag.txt",
+        },
+        {
+            "comment": "A group of KV pairs without quote",
+            "match": "^\\s*(\\S*)\\s*{$",
             "captures": {
                 "1": {
-                    "name":"entity.name.tag.txt"
+                    "name": "support.class"
+                }
+            }
+        },
+        {
+            "comment": "A group of 3 KV pairs without quote",
+            "match": "\\s*(\\S*)\\s*(\\S*)\\s*{",
+            "captures": {
+                "1": {
+                    "name": "support.class"
                 },
                 "2": {
-                    "name":"string.quoted.txt"
+                    "name": "constant.numeric"
+                }
+            }
+        },
+        {
+            "comment": "{",
+            "match": "\\s*{"
+        },
+        {
+            "comment": "}",
+            "match": "\\s*}"
+        },
+        {
+            "comment": "A key value pair",
+            "match": "(\".*?\")\\s*(\".*?\")",
+            "name": "entity.name.tag.txt",
+            "captures": {
+                "1": {
+                    "name": "entity.name.tag.txt"
+                },
+                "2": {
+                    "name": "string.quoted.txt"
+                }
+            }
+        },
+        {
+            "comment": "A key value pair(no quote)",
+            "match": "^\\s*(\\S*)\\s*(\\S*)$",
+            "captures": {
+                "1": {
+                    "name": "entity.name.tag.txt"
+                },
+                "2": {
+                    "name": "string.quoted.txt"
+                }
+            }
+        },
+        {
+            "comment": "A QC 3 key value pair(no quote)",
+            "match": "^\\s*(\\S*)\\s*(\\S*)\\s*(\\S*)$",
+            "captures": {
+                "1": {
+                    "name": "entity.name.tag.txt"
+                },
+                "2": {
+                    "name": "constant.numeric"
+                },
+                "3": {
+                    "name": "string.quoted.txt"
                 }
             }
         }

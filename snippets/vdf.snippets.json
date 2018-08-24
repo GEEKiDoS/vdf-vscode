@@ -79,9 +79,9 @@
         "body": "\"$$blendmodulatetexture\" \"${1:Texture}\"",
         "description": "VMT:$blendmodulatetexture <texture>"
     },
-    "blendmasktransform":{
-        "prefix":"blendmasktransform",
-        "body":"\"$$blendmasktransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
+    "blendmasktransform": {
+        "prefix": "blendmasktransform",
+        "body": "\"$$blendmasktransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
         "description": "VMT:$blendmasktransform <matrix>"
     },
     "distancealpha": {
@@ -194,9 +194,9 @@
         "body": "\"$$bumpmap\" \"${1:Texture}\"",
         "description": "VMT:$bumpmap <texture>"
     },
-    "bumptransform":{
-        "prefix":"bumptransform",
-        "body":"\"$$bumptransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
+    "bumptransform": {
+        "prefix": "bumptransform",
+        "body": "\"$$bumptransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
         "description": "VMT:$bumptransform <matrix>"
     },
     "ssbump": {
@@ -205,12 +205,12 @@
         "description": "VMT:$ssbump <boolean>"
     },
     "bumpscale": {
-        "prefix":"bumpscale",
+        "prefix": "bumpscale",
         "body": "\"$$bumpscale\" \"${1:1.0}\"",
         "description": "VMT:$bumpscale <float>"
     },
     "bumpframe": {
-        "prefix":"bumpframe",
+        "prefix": "bumpframe",
         "body": "\"$$bumpframe\" \"${1:1}\"",
         "description": "VMT:$bumpframe <int>"
     },
@@ -230,7 +230,7 @@
         "description": "VMT:$bumpoffset <unknown>"
     },
     "SSBumpMathFix": {
-        "prefix":"SSBumpMathFix",
+        "prefix": "SSBumpMathFix",
         "body": "\"$$SSBumpMathFix\" \"${1:1}\"",
         "description": "VMT:$SSBumpMathFix <int>"
     },
@@ -255,7 +255,7 @@
         "description": "VMT:$selfillumtint \"[ R G B ]\""
     },
     "selfillummaskscale": {
-        "prefix":"selfillummaskscale",
+        "prefix": "selfillummaskscale",
         "body": "\"$$selfillummaskscale\" \"${1:1.0}\"",
         "description": "VMT:$bumpscale <normal>"
     },
@@ -290,7 +290,7 @@
         "description": "VMT:$halflambert <boolean>"
     },
     "AmbientOcclusion": {
-        "prefix":"AmbientOcclusion",
+        "prefix": "AmbientOcclusion",
         "body": "\"$$AmbientOcclusion\" \"${1:1.0}\"",
         "description": "VMT:$AmbientOcclusion <float>"
     },
@@ -326,48 +326,89 @@
     },
     "EnvMap": {
         "prefix": "envmap",
-        "body":"\"$$envmap\" \"${1:env_cubemap}\"",
+        "body": "\"$$envmap\" \"${1:env_cubemap}\"",
         "description": "VMT:Enviroment Map Key and default value"
     },
-    "surfaceprop":{
-        "prefix":"surfaceprop",
-        "body":"\"$surfaceprop\" \"${1:none}\"",
+    "surfaceprop": {
+        "prefix": "surfaceprop",
+        "body": "\"$surfaceprop\" \"${1:none}\"",
         "description": "VMT & QC:$surfaceprop <name>"
     },
-    "detail":{
-        "prefix":"detail",
-        "body":"\"$$detail\" \"${1:Texture}\"",
+    "detail": {
+        "prefix": "detail",
+        "body": "\"$$detail\" \"${1:Texture}\"",
         "description": "VMT:$detail <texture>"
     },
-    "detailtexturetransform":{
-        "prefix":"detailtexturetransform",
-        "body":"\"$$detailtexturetransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
+    "detailtexturetransform": {
+        "prefix": "detailtexturetransform",
+        "body": "\"$$detailtexturetransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
         "description": "VMT:$detailtexturetransform <matrix>"
     },
-    "detailscale":{
-        "prefix":"detailscale",
-        "body":"\"$$detailscale\" \"${1:1}\"",
+    "detailscale": {
+        "prefix": "detailscale",
+        "body": "\"$$detailscale\" \"${1:1}\"",
         "description": "VMT:$detailscale <float>"
     },
-    "detailblendfactor":{
-        "prefix":"detailblendfactor",
-        "body":"\"$$detailblendfactor\" \"${1:1}\"",
+    "detailblendfactor": {
+        "prefix": "detailblendfactor",
+        "body": "\"$$detailblendfactor\" \"${1:1}\"",
         "description": "VMT:$detailblendfactor <normal>"
     },
     "dollar": {
         "prefix": "d",
-        "body":"\"$${1:Key}\" \"${2:Value}\"",
+        "body": "\"$${1:Key}\" \"${2:Value}\"",
         "description": "VDF:Create a kvp that key started with $"
     },
     "WorldVertexTransition": {
         "prefix": ">worldvertextransition",
-        "body": [ 
+        "body": [
             "\"WorldVertexTransition\"",
             "{",
             "\t\"$$basetexture\" \"${1:Texture 1}\"",
             "\t\"$$basetexture2\" \"${2:Texture 2}\"",
             "}"
         ],
-        "description": "VMT Temple:WorldVertexTransition Shader"
+        "description": "VMT Template:WorldVertexTransition Shader"
+    },
+    "LightmappedGeneric": {
+        "prefix": ">lightmappedgeneric",
+        "body": [
+            "\"LightmappedGeneric\"",
+            "{",
+            "\t\"$$basetexture\" \"${1:Texture 1}\"",
+            "}"
+        ],
+        "description": "VMT Template:LightmappedGeneric Shader"
+    },
+    "UnlitGeneric": {
+        "prefix": ">unlitgeneric",
+        "body": [
+            "\"UnlitGeneric\"",
+            "{",
+            "\t\"$$basetexture\" \"${1:Texture 1}\"",
+            "}"
+        ],
+        "description": "VMT Template:UnlitGeneric Shader"
+    },
+    "Proxies": {
+        "prefix": ">proxies",
+        "body": [
+            "\"Proxies\"",
+            "{",
+            "}"
+        ],
+        "description": "VMT Template:Proxies Group"
+    },
+    "AnimatedTexture": {
+        "prefix": ">animatedtexture",
+        "body": [
+            "\"AnimatedTexture\"",
+            "{",
+            "\t\"animatedTextureVar\" \"${1:$$basetexture}\"",
+            "\t\"animatedTextureFrameNumVar\" \"${2:$$frame}\"",
+            "\t\"animatedTextureFrameRate\" \"${3:24}\"",
+            "}"
+        ],
+        "description": "VMT Template:AnimetedTexture Material Proxy"
     }
 }
