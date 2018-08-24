@@ -38,19 +38,21 @@ AnimatedTexture -> at
 
 I think this is useful for me🤔.
 
-## Release Notes
+# Release Notes
 
-### 0.0.4
+## 0.0.4
 Add support for keyvalue without the quote mark
 Add .qc back to support list
+### 0.0.5
+bug fix for 0.0.4
 
-### 0.0.3
+## 0.0.3
 Remove .txt .qc from support list
 
-### 0.0.2
+## 0.0.2
 
 Added FGD support (thanks @Gocnak)
 
-### 0.0.1
+## 0.0.1
 
 Initial release of this.
