@@ -72,7 +72,7 @@
         },
         {
             "comment": "A QC 3 key value pair(no quote)",
-            "match": "^\\s*(\\S*)\\s*(\\S*)\\s*(\\S*)$",
+            "match": "^\\s*(\\S*)\\s*(\\S*)\\s*(\".*?\")$",
             "captures": {
                 "1": {
                     "name": "entity.name.tag.txt"
