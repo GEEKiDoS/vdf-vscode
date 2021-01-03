@@ -13,6 +13,7 @@ Supports:
 .vmx
 .vdf
 .fgd
+.vpc
 ```
 
 ## Features
@@ -39,7 +40,8 @@ AnimatedTexture -> at
 I think this is useful for me🤔.
 
 # Release Notes
-
+## 0.0.6
+Add vpc to support list
 ## 0.0.4
 Add support for keyvalue without the quote mark
 Add .qc back to support list
