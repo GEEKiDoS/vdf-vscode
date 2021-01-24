@@ -27,7 +27,8 @@
                     ".kv",
                     ".res",
                     ".vmf",
-                    ".vmx"
+                    ".vmx",
+                    ".vpc"
                 ],
                 "configuration": "./language-configuration.json"
             },
