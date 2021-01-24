@@ -14,6 +14,7 @@ Supports:
 .vdf
 .fgd
 .vpc
+.acf
 ```
 
 ## Features
@@ -26,7 +27,7 @@ Use ```>``` to trigger template, for example:
 ```
 >lmg
 ```
-this will trigger the LightmappedGeneric Shader VMT Template, then press the Tab,it should insert the template to your code.
+this will trigger the LightmappedGeneric Shader VMT Template, then press the Tab, it should insert the template to your code.
 
 Template List:
 ```
@@ -41,7 +42,7 @@ I think this is useful for me🤔.
 
 # Release Notes
 ## 0.0.6
-Add vpc to support list
+Add vpc and fgd to support list
 ## 0.0.4
 Add support for keyvalue without the quote mark
 Add .qc back to support list
