@@ -2,7 +2,7 @@
     "name": "vdf",
     "displayName": "Valve KeyValue Files Support",
     "description": "Support valve kv language(.vmt .qc .vdf .res .kv .fgd etc.)",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "GEEKiDoS",
     "icon": "SourceLogo.gif",
     "repository":"https://github.com/GEEKiDoS/vdf-vscode.git",
