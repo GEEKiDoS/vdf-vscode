@@ -21,6 +21,7 @@
                     "vdf"
                 ],
                 "extensions": [
+                    ".acf",
                     ".vmt",
                     ".qc",
                     ".vdf",
