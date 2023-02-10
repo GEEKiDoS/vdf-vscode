@@ -378,7 +378,7 @@
     "PBR_model": {
         "prefix": ">PBR_model",
         "body": [
-            "PBR",
+            "\"PBR\"",
             "{",
             "\t\"$$basetexture\" \"${1:Texture 1}\"",
             "\t$$emissiontexture \"Emisive PBR texture\"",
@@ -393,7 +393,7 @@
     "PBR_brush": {
         "prefix": ">PBR_brush",
         "body": [
-            "PBR",
+            "\"PBR\"",
             "{",
             "\t\"$$basetexture\" \"${1:Texture 1}\"",
             "\t$$emissiontexture \"Emisive PBR texture\"",
