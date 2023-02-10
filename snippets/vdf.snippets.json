@@ -4,9 +4,14 @@
         "body": "\"$$basetexture\" \"${1:Texture}\"",
         "description": "VMT:$basetexture <texture>"
     },
+    "MRAOTexture": {
+        "prefix": "mraotexture",
+        "body": "$$mraotexture \"${1:Mraotexture}\"",
+        "description": "VMT:$mraotexture <mrao texture>"
+    },
     "basetexturetransform": {
         "prefix": "basetexturetransform",
-        "body": "\"$$basetexturetransform\" \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
+        "body": "$$basetexturetransform \"center ${1:.5} ${2:.5} scale ${3:1} ${4:1} rotate ${5:0} translate ${6:0} ${7:0}\"",
         "description": "VMT:$basetexturetransform <matrix>"
     },
     "basetextureoffset": {
@@ -369,6 +374,34 @@
             "}"
         ],
         "description": "VMT Template:WorldVertexTransition Shader"
+    },
+    "PBR_model": {
+        "prefix": ">PBR_model",
+        "body": [
+            "PBR",
+            "{",
+            "\t\"$$basetexture\" \"${1:Texture 1}\"",
+            "\t$$emissiontexture \"Emisive PBR texture\"",
+            "\t$$mraotexture \"${1:Mraotexture}\"",
+            "\t$$normaltexture \"${1:normaltexture}\"",
+            "",
+            "\t$$model \"1\"",
+            "}"
+        ],
+        "description": "VMT Template:PBR model Shader"
+    },
+    "PBR_brush": {
+        "prefix": ">PBR_brush",
+        "body": [
+            "PBR",
+            "{",
+            "\t\"$$basetexture\" \"${1:Texture 1}\"",
+            "\t$$emissiontexture \"Emisive PBR texture\"",
+            "\t$$mraotexture \"${1:Mraotexture}\"",
+            "\t$$normaltexture \"${1:normaltexture}\"",
+            "}"
+        ],
+        "description": "VMT Template:PBR brush Shader"
     },
     "LightmappedGeneric": {
         "prefix": ">lightmappedgeneric",
